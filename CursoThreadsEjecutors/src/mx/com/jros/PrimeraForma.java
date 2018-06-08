@@ -22,6 +22,7 @@ class PrimeraTarea extends Thread{
 		for (int i=10; i > 0;i--)
 		{
 			System.out.println("<"+id+"> TICK TICK " + i);
+			nuevaTarea();
 			try {
 				TimeUnit.MILLISECONDS.sleep(200);
 			} catch (InterruptedException e) {
@@ -36,5 +37,12 @@ class PrimeraTarea extends Thread{
 		this.id=++count;
 		this.start();
 	}
+	
+	
+	public void nuevaTarea()
+	{
+		System.out.println("Esta es una nueva Tarea ...");
+	}
+	
 	
 }

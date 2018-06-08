@@ -9,6 +9,8 @@ public class CurataForma {
 		new Thread(new CuartaTarea()).start();
 		Thread t=new Thread(new CuartaTarea());
 		t.start();
+		Thread t2=new Thread(new CuartaTarea());
+		t2.start();
 		System.out.println("Main thread ends here ...");
 	}
 }

@@ -1,0 +1,11 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://prevalidador.aq.com/students" 
+xmlns:tns="http://prevalidador.aq.com/students" elementFormDefault="qualified">
+<Envelope xmlns="http://schemas.xmlsoap.org/soap/envelope/">
+	<Body>
+        <GetStudentDetailsRequest xmlns="http://in28minutes.com/students">
+            <id>1</id>
+        </GetStudentDetailsRequest>
+    </Body>
+</Envelope>
+</xs:schema>
